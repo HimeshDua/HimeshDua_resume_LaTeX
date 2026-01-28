@@ -1,0 +1,165 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[scale=0.90,lf]{FiraMono}
+
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\color{text-grey}
+
+\titleformat{\section}{
+  \bfseries\raggedright\large
+}{}{0em}{}[\color{light-grey}\titlerule]
+
+%-------------------------
+% Custom Commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+\newcommand{\resumeLinks}[1]{
+  {\small \textcolor{dark-grey}{#1}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+      \textit{#3} & {\small #4}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%=========================
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    \textbf{\Huge Himesh Dua} \\ \vspace{6pt}
+
+    \faPhone*~+92~336~7719555 \quad
+    \faEnvelope~\href{mailto:himeshdua22@gmail.com}{himeshdua22@gmail.com} \quad
+    \faEnvelopeOpen~\href{mailto:himesh2407b@aptechgdn.net}{aptechgdn.net} \quad
+    \faGlobe~\href{https://himeshdua.vercel.app}{himeshdua.vercel.app} \quad
+    \faGithub~\href{https://github.com/himeshdua}{github.com/himeshdua} \quad
+    \faLinkedin~\href{https://linkedin.com/in/himeshdua}{linkedin.com/in/himeshdua}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{SUMMARY}
+\small{
+React-focused Frontend Engineer with strong expertise in \textbf{Next.js (App Router)}, TypeScript, and modern UI systems. Experienced in building \textbf{high-performance, production-grade web applications} with SSR, caching, and scalable frontend architectures. Comfortable collaborating across the stack when needed.
+}
+
+%-----------SKILLS-----------
+\section{TECHNICAL SKILLS}
+\small{
+\textbf{Frontend:} Next.js, React, TypeScript, Tailwind CSS, Shadcn UI \\
+\textbf{State \& Data:} React Server Components, Caching Strategies, IndexedDB, Prisma ORM \\
+\textbf{Backend (working knowledge):} Node.js, Laravel \\
+\textbf{Databases:} MySQL, Supabase \\
+\textbf{Tools:} Vercel, GitHub, Postman
+}
+
+%-----------EXPERIENCE-----------
+\section{PROJECT EXPERIENCE}
+\resumeSubHeadingListStart
+
+% LIBREBOOKS
+\resumeSubheading
+  {LibreBooks}
+  {2025 -- Present}
+  {Next.js (App Router), Supabase, IndexedDB, OAuth}
+  {\resumeLinks{
+    \faGlobe~\href{https://librebooks.vercel.app}{Website}
+    \quad
+    \faGithub~\href{https://github.com/himeshdua/librebooks}{Source}
+  }}
+\resumeItemListStart
+\resumeItem{Built a production-grade digital library using \textbf{Next.js App Router} with server components and route-based data fetching.}
+\resumeItem{Ingested and indexed \textbf{12,000+ public-domain books} from the \textbf{GutenDex (Project Gutenberg) API}, implementing pagination and filtering for scalable browsing.}
+\resumeItem{Implemented client-side state management using \textbf{Zustand} to persist user favorites across authenticated and guest sessions.}
+\resumeItem{Integrated \textbf{react-reader} for EPUB consumption and implemented personalized book recommendations based on user language and category preferences.}
+\resumeItemListEnd
+
+% DEVGRADE
+\resumeSubheading
+  {DevGrade}
+  {2025}
+  {Next.js, TypeScript, GitHub API}
+  {\resumeLinks{
+    \faGlobe~\href{https://devgrade.vercel.app}{Website}
+  }}
+\resumeItemListStart
+  \resumeItem{Developed an automated assessment platform measuring \textbf{code quality} and \textbf{developer productivity}.}
+  \resumeItem{Built analytical dashboards to support data-driven technical hiring decisions.}
+  \resumeItem{Automated candidate workflows and evaluations using GitHub activity data.}
+
+\resumeItemListEnd
+
+% NETNEST
+\resumeSubheading
+  {NetNest}
+  {2025}
+  {Laravel 12, Inertia, React}
+  {\resumeLinks{
+    \faGithub~\href{https://github.com/himeshdua/netnest}{Source Code}
+  }}
+\resumeItemListStart
+  \resumeItem{Built an ISP management platform showcased at \textbf{Aptech Vision 2025}, developed as part of a small collaborative team.}
+  \resumeItem{Led the implementation of \textbf{role-based dashboards}, authentication flows, and relational data models.}
+  \resumeItem{Implemented a seamless SPA experience using \textbf{Inertia.js} to bridge Laravel and React.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Aptech}{2024 -- 2027}
+    {Advanced Diploma in Software Engineering}{Pakistan}
+\resumeItemListStart
+    \resumeItem{Focused on software architecture, databases, and modern development}
+\resumeItemListEnd
+
+\resumeSubheading
+    {Board of Secondary Education Karachi}{2024}
+    {Matriculation}{Pakistan}
+
+\resumeSubHeadingListEnd
+
+\end{document}
